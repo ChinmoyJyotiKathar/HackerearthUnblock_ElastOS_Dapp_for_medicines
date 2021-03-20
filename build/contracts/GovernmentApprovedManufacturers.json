@@ -1,0 +1,2660 @@
+{
+  "contractName": "GovernmentApprovedManufacturers",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "manufacturer_pvt_id",
+          "type": "string"
+        }
+      ],
+      "name": "register_manufacturer",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "manufacturer_pvt_id",
+          "type": "string"
+        }
+      ],
+      "name": "is_registered_manufacturer",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"string\",\"name\":\"manufacturer_pvt_id\",\"type\":\"string\"}],\"name\":\"is_registered_manufacturer\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"string\",\"name\":\"manufacturer_pvt_id\",\"type\":\"string\"}],\"name\":\"register_manufacturer\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/chinmoy_2/Desktop/personal/elastos_medicine_blockchain/contracts/GovernmentApprovedManufacturers.sol\":\"GovernmentApprovedManufacturers\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/chinmoy_2/Desktop/personal/elastos_medicine_blockchain/contracts/GovernmentApprovedManufacturers.sol\":{\"keccak256\":\"0xd7e1e632e7641043e3149b0159146b3ffa1425ffff654a34936377bfb9a85daf\",\"urls\":[\"bzz-raw://91e5b98100cb064d493c797ff1b55bfd4d1e630f8c02f0e26c01efed6c81963f\",\"dweb:/ipfs/Qmd68Q5WXW6hVtBom1PmCB1eK1sMKCS1sncn7kirBgZciF\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506100196100be565b60405180602001604052806040518060400160405280601e81526020017f6e687441716473507961736442426773646a3731336e6773644a4b53414400008152508152509050600160008054905010156100b85760008190806001815401808255809150509060018203906000526020600020016000909192909190915060008201518160000190805190602001906100b39291906100d1565b505050505b50610176565b6040518060200160405280606081525090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061011257805160ff1916838001178555610140565b82800160010185558215610140579182015b8281111561013f578251825591602001919060010190610124565b5b50905061014d9190610151565b5090565b61017391905b8082111561016f576000816000905550600101610157565b5090565b90565b61047f806101856000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c8063c6d3f77d1461003b578063d8a201d91461010e575b600080fd5b6100f46004803603602081101561005157600080fd5b810190808035906020019064010000000081111561006e57600080fd5b82018360208201111561008057600080fd5b803590602001918460018302840111640100000000831117156100a257600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192905050506101e1565b604051808215151515815260200191505060405180910390f35b6101c76004803603602081101561012457600080fd5b810190808035906020019064010000000081111561014157600080fd5b82018360208201111561015357600080fd5b8035906020019184600183028401116401000000008311171561017557600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610323565b604051808215151515815260200191505060405180910390f35b600080600090505b60008054905081101561031857826040516020018082805190602001908083835b6020831061022d578051825260208201915060208101905060208303925061020a565b6001836020036101000a038019825116818451168082178552505050505050905001915050604051602081830303815290604052805190602001206000828154811061027557fe5b9060005260206000200160000160405160200180828054600181600116156101000203166002900480156102e05780601f106102be5761010080835404028352918201916102e0565b820191906000526020600020905b8154815290600101906020018083116102cc575b505091505060405160208183030381529060405280519060200120141561030b57600191505061031e565b80806001019150506101e9565b50600090505b919050565b600061032d610392565b604051806020016040528084815250905060008190806001815401808255809150509060018203906000526020600020016000909192909190915060008201518160000190805190602001906103849291906103a5565b505050506001915050919050565b6040518060200160405280606081525090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106103e657805160ff1916838001178555610414565b82800160010185558215610414579182015b828111156104135782518255916020019190600101906103f8565b5b5090506104219190610425565b5090565b61044791905b8082111561044357600081600090555060010161042b565b5090565b9056fea265627a7a72315820a00a01de0bcc5e7d528ccde973142665b56cd3063cc0448f79c397846372519e64736f6c63430005100032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c8063c6d3f77d1461003b578063d8a201d91461010e575b600080fd5b6100f46004803603602081101561005157600080fd5b810190808035906020019064010000000081111561006e57600080fd5b82018360208201111561008057600080fd5b803590602001918460018302840111640100000000831117156100a257600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192905050506101e1565b604051808215151515815260200191505060405180910390f35b6101c76004803603602081101561012457600080fd5b810190808035906020019064010000000081111561014157600080fd5b82018360208201111561015357600080fd5b8035906020019184600183028401116401000000008311171561017557600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610323565b604051808215151515815260200191505060405180910390f35b600080600090505b60008054905081101561031857826040516020018082805190602001908083835b6020831061022d578051825260208201915060208101905060208303925061020a565b6001836020036101000a038019825116818451168082178552505050505050905001915050604051602081830303815290604052805190602001206000828154811061027557fe5b9060005260206000200160000160405160200180828054600181600116156101000203166002900480156102e05780601f106102be5761010080835404028352918201916102e0565b820191906000526020600020905b8154815290600101906020018083116102cc575b505091505060405160208183030381529060405280519060200120141561030b57600191505061031e565b80806001019150506101e9565b50600090505b919050565b600061032d610392565b604051806020016040528084815250905060008190806001815401808255809150509060018203906000526020600020016000909192909190915060008201518160000190805190602001906103849291906103a5565b505050506001915050919050565b6040518060200160405280606081525090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106103e657805160ff1916838001178555610414565b82800160010185558215610414579182015b828111156104135782518255916020019190600101906103f8565b5b5090506104219190610425565b5090565b61044791905b8082111561044357600081600090555060010161042b565b5090565b9056fea265627a7a72315820a00a01de0bcc5e7d528ccde973142665b56cd3063cc0448f79c397846372519e64736f6c63430005100032",
+  "sourceMap": "25:1288:0:-;;;281:279;8:9:-1;5:2;;;30:1;27;20:12;5:2;281:279:0;312:49;;:::i;:::-;364:54;;;;;;;;;;;;;;;;;;;;;;;;;;;;312:106;;464:1;432:22;:29;;;;:33;428:126;;;480:22;508:21;480:50;;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;480:50:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;428:126;281:279;25:1288;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "25:1288:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:1288:0;;;;;;;;;;;;;;;;;;;;;;;;915:396;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;915:396:0;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;915:396:0;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;915:396:0;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;915:396:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;915:396:0;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;597:281;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;597:281:0;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;597:281:0;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;597:281:0;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;597:281:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;597:281:0;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;915:396;1007:4;1029:6;1036:1;1029:8;;1024:258;1041:22;:29;;;;1039:1;:31;1024:258;;;1200:19;1183:37;;;;;;;;;;;;;;;36:153:-1;66:2;61:3;58:11;36:153;;182:3;176:10;171:3;164:23;98:2;93:3;89:12;82:19;;123:2;118:3;114:12;107:19;;148:2;143:3;139:12;132:19;;36:153;;;274:1;267:3;263:2;259:12;254:3;250:22;246:30;315:4;311:9;305:3;299:10;295:26;356:4;350:3;344:10;340:21;389:7;380;377:20;372:3;365:33;3:399;;;1183:37:0;;;;;;;;;;;49:4:-1;39:7;30;26:21;22:32;13:7;6:49;1183:37:0;;;1173:48;;;;;;1122:22;1145:1;1122:25;;;;;;;;;;;;;;;:45;;1105:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;49:4:-1;39:7;30;26:21;22:32;13:7;6:49;1105:63:0;;;1095:74;;;;;;:126;1091:176;;;1248:4;1241:11;;;;;1091:176;1072:3;;;;;;;1024:258;;;;1299:5;1292:12;;915:396;;;;:::o;597:281::-;679:4;696:49;;:::i;:::-;748:41;;;;;;;;769:19;748:41;;;696:93;;799:22;827:21;799:50;;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;799:50:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;867:4;860:11;;;597:281;;;:::o;25:1288::-;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.5.0;\n\ncontract GovernmentApprovedManufacturers {\n\n    struct ApprovedManufacturer {\n        string manufacturer_pvt_id;\n    }\n\n    // Index of a medicine is its medcine_id.\n    ApprovedManufacturer[] approved_manufacturers;\n\n\n    // Add a dummy manufacturer\n    constructor() public {\n        ApprovedManufacturer memory approved_manufacturer = ApprovedManufacturer('nhtAqdsPyasdBBgsdj713ngsdJKSAD');\n        if (approved_manufacturers.length < 1){\n            approved_manufacturers.push(approved_manufacturer);\n            \n        }\n    }\n\n    // Register a Manufacturer\n    function register_manufacturer(string memory manufacturer_pvt_id) public returns (bool) {\n\n        ApprovedManufacturer memory approved_manufacturer = ApprovedManufacturer(manufacturer_pvt_id);\n        approved_manufacturers.push(approved_manufacturer);\n\n        return true;\n    }\n\n    // Register a Manufacturer\n    function is_registered_manufacturer(string memory manufacturer_pvt_id) public view returns (bool) {\n\n        for (uint i=0; i<approved_manufacturers.length; i++) {\n            if (keccak256(abi.encodePacked(approved_manufacturers[i].manufacturer_pvt_id)) == keccak256(abi.encodePacked(manufacturer_pvt_id))) {\n                return true;\n            }     \n        }\n\n        return false;\n    }\n}",
+  "sourcePath": "/Users/chinmoy_2/Desktop/personal/elastos_medicine_blockchain/contracts/GovernmentApprovedManufacturers.sol",
+  "ast": {
+    "absolutePath": "/Users/chinmoy_2/Desktop/personal/elastos_medicine_blockchain/contracts/GovernmentApprovedManufacturers.sol",
+    "exportedSymbols": {
+      "GovernmentApprovedManufacturers": [
+        95
+      ]
+    },
+    "id": 96,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 95,
+        "linearizedBaseContracts": [
+          95
+        ],
+        "name": "GovernmentApprovedManufacturers",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "GovernmentApprovedManufacturers.ApprovedManufacturer",
+            "id": 4,
+            "members": [
+              {
+                "constant": false,
+                "id": 3,
+                "name": "manufacturer_pvt_id",
+                "nodeType": "VariableDeclaration",
+                "scope": 4,
+                "src": "111:26:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 2,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "111:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "ApprovedManufacturer",
+            "nodeType": "StructDefinition",
+            "scope": 95,
+            "src": "73:71:0",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 7,
+            "name": "approved_manufacturers",
+            "nodeType": "VariableDeclaration",
+            "scope": 95,
+            "src": "196:45:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_struct$_ApprovedManufacturer_$4_storage_$dyn_storage",
+              "typeString": "struct GovernmentApprovedManufacturers.ApprovedManufacturer[]"
+            },
+            "typeName": {
+              "baseType": {
+                "contractScope": null,
+                "id": 5,
+                "name": "ApprovedManufacturer",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 4,
+                "src": "196:20:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_ApprovedManufacturer_$4_storage_ptr",
+                  "typeString": "struct GovernmentApprovedManufacturers.ApprovedManufacturer"
+                }
+              },
+              "id": 6,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "196:22:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_struct$_ApprovedManufacturer_$4_storage_$dyn_storage_ptr",
+                "typeString": "struct GovernmentApprovedManufacturers.ApprovedManufacturer[]"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 28,
+              "nodeType": "Block",
+              "src": "302:258:0",
+              "statements": [
+                {
+                  "assignments": [
+                    11
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 11,
+                      "name": "approved_manufacturer",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 28,
+                      "src": "312:49:0",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_ApprovedManufacturer_$4_memory_ptr",
+                        "typeString": "struct GovernmentApprovedManufacturers.ApprovedManufacturer"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 10,
+                        "name": "ApprovedManufacturer",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 4,
+                        "src": "312:20:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_ApprovedManufacturer_$4_storage_ptr",
+                          "typeString": "struct GovernmentApprovedManufacturers.ApprovedManufacturer"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 15,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "6e687441716473507961736442426773646a3731336e6773644a4b534144",
+                        "id": 13,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "385:32:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_08e18fc6a777eeb8535f2220a701a4362bf85b64bb679cf31a28bcc7671ff9c0",
+                          "typeString": "literal_string \"nhtAqdsPyasdBBgsdj713ngsdJKSAD\""
+                        },
+                        "value": "nhtAqdsPyasdBBgsdj713ngsdJKSAD"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_08e18fc6a777eeb8535f2220a701a4362bf85b64bb679cf31a28bcc7671ff9c0",
+                          "typeString": "literal_string \"nhtAqdsPyasdBBgsdj713ngsdJKSAD\""
+                        }
+                      ],
+                      "id": 12,
+                      "name": "ApprovedManufacturer",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4,
+                      "src": "364:20:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_struct$_ApprovedManufacturer_$4_storage_ptr_$",
+                        "typeString": "type(struct GovernmentApprovedManufacturers.ApprovedManufacturer storage pointer)"
+                      }
+                    },
+                    "id": 14,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "structConstructorCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "364:54:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_ApprovedManufacturer_$4_memory",
+                      "typeString": "struct GovernmentApprovedManufacturers.ApprovedManufacturer memory"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "312:106:0"
+                },
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 19,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 16,
+                        "name": "approved_manufacturers",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 7,
+                        "src": "432:22:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_ApprovedManufacturer_$4_storage_$dyn_storage",
+                          "typeString": "struct GovernmentApprovedManufacturers.ApprovedManufacturer storage ref[] storage ref"
+                        }
+                      },
+                      "id": 17,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "length",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "432:29:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "<",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "hexValue": "31",
+                      "id": 18,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "464:1:0",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_1_by_1",
+                        "typeString": "int_const 1"
+                      },
+                      "value": "1"
+                    },
+                    "src": "432:33:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": null,
+                  "id": 27,
+                  "nodeType": "IfStatement",
+                  "src": "428:126:0",
+                  "trueBody": {
+                    "id": 26,
+                    "nodeType": "Block",
+                    "src": "466:88:0",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "arguments": [
+                            {
+                              "argumentTypes": null,
+                              "id": 23,
+                              "name": "approved_manufacturer",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 11,
+                              "src": "508:21:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_struct$_ApprovedManufacturer_$4_memory_ptr",
+                                "typeString": "struct GovernmentApprovedManufacturers.ApprovedManufacturer memory"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_struct$_ApprovedManufacturer_$4_memory_ptr",
+                                "typeString": "struct GovernmentApprovedManufacturers.ApprovedManufacturer memory"
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 20,
+                              "name": "approved_manufacturers",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 7,
+                              "src": "480:22:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_array$_t_struct$_ApprovedManufacturer_$4_storage_$dyn_storage",
+                                "typeString": "struct GovernmentApprovedManufacturers.ApprovedManufacturer storage ref[] storage ref"
+                              }
+                            },
+                            "id": 22,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "push",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "480:27:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_ApprovedManufacturer_$4_storage_$returns$_t_uint256_$",
+                              "typeString": "function (struct GovernmentApprovedManufacturers.ApprovedManufacturer storage ref) returns (uint256)"
+                            }
+                          },
+                          "id": 24,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "480:50:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "id": 25,
+                        "nodeType": "ExpressionStatement",
+                        "src": "480:50:0"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 29,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "292:2:0"
+            },
+            "returnParameters": {
+              "id": 9,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "302:0:0"
+            },
+            "scope": 95,
+            "src": "281:279:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 50,
+              "nodeType": "Block",
+              "src": "685:193:0",
+              "statements": [
+                {
+                  "assignments": [
+                    37
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 37,
+                      "name": "approved_manufacturer",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 50,
+                      "src": "696:49:0",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_ApprovedManufacturer_$4_memory_ptr",
+                        "typeString": "struct GovernmentApprovedManufacturers.ApprovedManufacturer"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 36,
+                        "name": "ApprovedManufacturer",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 4,
+                        "src": "696:20:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_ApprovedManufacturer_$4_storage_ptr",
+                          "typeString": "struct GovernmentApprovedManufacturers.ApprovedManufacturer"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 41,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 39,
+                        "name": "manufacturer_pvt_id",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 31,
+                        "src": "769:19:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      ],
+                      "id": 38,
+                      "name": "ApprovedManufacturer",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4,
+                      "src": "748:20:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_struct$_ApprovedManufacturer_$4_storage_ptr_$",
+                        "typeString": "type(struct GovernmentApprovedManufacturers.ApprovedManufacturer storage pointer)"
+                      }
+                    },
+                    "id": 40,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "structConstructorCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "748:41:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_ApprovedManufacturer_$4_memory",
+                      "typeString": "struct GovernmentApprovedManufacturers.ApprovedManufacturer memory"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "696:93:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 45,
+                        "name": "approved_manufacturer",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 37,
+                        "src": "827:21:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_ApprovedManufacturer_$4_memory_ptr",
+                          "typeString": "struct GovernmentApprovedManufacturers.ApprovedManufacturer memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_struct$_ApprovedManufacturer_$4_memory_ptr",
+                          "typeString": "struct GovernmentApprovedManufacturers.ApprovedManufacturer memory"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 42,
+                        "name": "approved_manufacturers",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 7,
+                        "src": "799:22:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_ApprovedManufacturer_$4_storage_$dyn_storage",
+                          "typeString": "struct GovernmentApprovedManufacturers.ApprovedManufacturer storage ref[] storage ref"
+                        }
+                      },
+                      "id": 44,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "push",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "799:27:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_ApprovedManufacturer_$4_storage_$returns$_t_uint256_$",
+                        "typeString": "function (struct GovernmentApprovedManufacturers.ApprovedManufacturer storage ref) returns (uint256)"
+                      }
+                    },
+                    "id": 46,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "799:50:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 47,
+                  "nodeType": "ExpressionStatement",
+                  "src": "799:50:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "74727565",
+                    "id": 48,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "bool",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "867:4:0",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    },
+                    "value": "true"
+                  },
+                  "functionReturnParameters": 35,
+                  "id": 49,
+                  "nodeType": "Return",
+                  "src": "860:11:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 51,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "register_manufacturer",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 32,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 31,
+                  "name": "manufacturer_pvt_id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 51,
+                  "src": "628:33:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 30,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "628:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "627:35:0"
+            },
+            "returnParameters": {
+              "id": 35,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 34,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 51,
+                  "src": "679:4:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 33,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "679:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "678:6:0"
+            },
+            "scope": 95,
+            "src": "597:281:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 93,
+              "nodeType": "Block",
+              "src": "1013:298:0",
+              "statements": [
+                {
+                  "body": {
+                    "id": 89,
+                    "nodeType": "Block",
+                    "src": "1077:205:0",
+                    "statements": [
+                      {
+                        "condition": {
+                          "argumentTypes": null,
+                          "commonType": {
+                            "typeIdentifier": "t_bytes32",
+                            "typeString": "bytes32"
+                          },
+                          "id": 84,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftExpression": {
+                            "argumentTypes": null,
+                            "arguments": [
+                              {
+                                "argumentTypes": null,
+                                "arguments": [
+                                  {
+                                    "argumentTypes": null,
+                                    "expression": {
+                                      "argumentTypes": null,
+                                      "baseExpression": {
+                                        "argumentTypes": null,
+                                        "id": 72,
+                                        "name": "approved_manufacturers",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 7,
+                                        "src": "1122:22:0",
+                                        "typeDescriptions": {
+                                          "typeIdentifier": "t_array$_t_struct$_ApprovedManufacturer_$4_storage_$dyn_storage",
+                                          "typeString": "struct GovernmentApprovedManufacturers.ApprovedManufacturer storage ref[] storage ref"
+                                        }
+                                      },
+                                      "id": 74,
+                                      "indexExpression": {
+                                        "argumentTypes": null,
+                                        "id": 73,
+                                        "name": "i",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 59,
+                                        "src": "1145:1:0",
+                                        "typeDescriptions": {
+                                          "typeIdentifier": "t_uint256",
+                                          "typeString": "uint256"
+                                        }
+                                      },
+                                      "isConstant": false,
+                                      "isLValue": true,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "nodeType": "IndexAccess",
+                                      "src": "1122:25:0",
+                                      "typeDescriptions": {
+                                        "typeIdentifier": "t_struct$_ApprovedManufacturer_$4_storage",
+                                        "typeString": "struct GovernmentApprovedManufacturers.ApprovedManufacturer storage ref"
+                                      }
+                                    },
+                                    "id": 75,
+                                    "isConstant": false,
+                                    "isLValue": true,
+                                    "isPure": false,
+                                    "lValueRequested": false,
+                                    "memberName": "manufacturer_pvt_id",
+                                    "nodeType": "MemberAccess",
+                                    "referencedDeclaration": 3,
+                                    "src": "1122:45:0",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_string_storage",
+                                      "typeString": "string storage ref"
+                                    }
+                                  }
+                                ],
+                                "expression": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_string_storage",
+                                      "typeString": "string storage ref"
+                                    }
+                                  ],
+                                  "expression": {
+                                    "argumentTypes": null,
+                                    "id": 70,
+                                    "name": "abi",
+                                    "nodeType": "Identifier",
+                                    "overloadedDeclarations": [],
+                                    "referencedDeclaration": 97,
+                                    "src": "1105:3:0",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_magic_abi",
+                                      "typeString": "abi"
+                                    }
+                                  },
+                                  "id": 71,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "memberName": "encodePacked",
+                                  "nodeType": "MemberAccess",
+                                  "referencedDeclaration": null,
+                                  "src": "1105:16:0",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_function_abiencodepacked_pure$__$returns$_t_bytes_memory_ptr_$",
+                                    "typeString": "function () pure returns (bytes memory)"
+                                  }
+                                },
+                                "id": 76,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "kind": "functionCall",
+                                "lValueRequested": false,
+                                "names": [],
+                                "nodeType": "FunctionCall",
+                                "src": "1105:63:0",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_bytes_memory_ptr",
+                                  "typeString": "bytes memory"
+                                }
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bytes_memory_ptr",
+                                  "typeString": "bytes memory"
+                                }
+                              ],
+                              "id": 69,
+                              "name": "keccak256",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 104,
+                              "src": "1095:9:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
+                                "typeString": "function (bytes memory) pure returns (bytes32)"
+                              }
+                            },
+                            "id": 77,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "kind": "functionCall",
+                            "lValueRequested": false,
+                            "names": [],
+                            "nodeType": "FunctionCall",
+                            "src": "1095:74:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bytes32",
+                              "typeString": "bytes32"
+                            }
+                          },
+                          "nodeType": "BinaryOperation",
+                          "operator": "==",
+                          "rightExpression": {
+                            "argumentTypes": null,
+                            "arguments": [
+                              {
+                                "argumentTypes": null,
+                                "arguments": [
+                                  {
+                                    "argumentTypes": null,
+                                    "id": 81,
+                                    "name": "manufacturer_pvt_id",
+                                    "nodeType": "Identifier",
+                                    "overloadedDeclarations": [],
+                                    "referencedDeclaration": 53,
+                                    "src": "1200:19:0",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_string_memory_ptr",
+                                      "typeString": "string memory"
+                                    }
+                                  }
+                                ],
+                                "expression": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_string_memory_ptr",
+                                      "typeString": "string memory"
+                                    }
+                                  ],
+                                  "expression": {
+                                    "argumentTypes": null,
+                                    "id": 79,
+                                    "name": "abi",
+                                    "nodeType": "Identifier",
+                                    "overloadedDeclarations": [],
+                                    "referencedDeclaration": 97,
+                                    "src": "1183:3:0",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_magic_abi",
+                                      "typeString": "abi"
+                                    }
+                                  },
+                                  "id": 80,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "memberName": "encodePacked",
+                                  "nodeType": "MemberAccess",
+                                  "referencedDeclaration": null,
+                                  "src": "1183:16:0",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_function_abiencodepacked_pure$__$returns$_t_bytes_memory_ptr_$",
+                                    "typeString": "function () pure returns (bytes memory)"
+                                  }
+                                },
+                                "id": 82,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": false,
+                                "kind": "functionCall",
+                                "lValueRequested": false,
+                                "names": [],
+                                "nodeType": "FunctionCall",
+                                "src": "1183:37:0",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_bytes_memory_ptr",
+                                  "typeString": "bytes memory"
+                                }
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bytes_memory_ptr",
+                                  "typeString": "bytes memory"
+                                }
+                              ],
+                              "id": 78,
+                              "name": "keccak256",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 104,
+                              "src": "1173:9:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
+                                "typeString": "function (bytes memory) pure returns (bytes32)"
+                              }
+                            },
+                            "id": 83,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "kind": "functionCall",
+                            "lValueRequested": false,
+                            "names": [],
+                            "nodeType": "FunctionCall",
+                            "src": "1173:48:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bytes32",
+                              "typeString": "bytes32"
+                            }
+                          },
+                          "src": "1095:126:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "falseBody": null,
+                        "id": 88,
+                        "nodeType": "IfStatement",
+                        "src": "1091:176:0",
+                        "trueBody": {
+                          "id": 87,
+                          "nodeType": "Block",
+                          "src": "1223:44:0",
+                          "statements": [
+                            {
+                              "expression": {
+                                "argumentTypes": null,
+                                "hexValue": "74727565",
+                                "id": 85,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": true,
+                                "kind": "bool",
+                                "lValueRequested": false,
+                                "nodeType": "Literal",
+                                "src": "1248:4:0",
+                                "subdenomination": null,
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                },
+                                "value": "true"
+                              },
+                              "functionReturnParameters": 57,
+                              "id": 86,
+                              "nodeType": "Return",
+                              "src": "1241:11:0"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 65,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 62,
+                      "name": "i",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 59,
+                      "src": "1039:1:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "<",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 63,
+                        "name": "approved_manufacturers",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 7,
+                        "src": "1041:22:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_ApprovedManufacturer_$4_storage_$dyn_storage",
+                          "typeString": "struct GovernmentApprovedManufacturers.ApprovedManufacturer storage ref[] storage ref"
+                        }
+                      },
+                      "id": 64,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "length",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "1041:29:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "1039:31:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 90,
+                  "initializationExpression": {
+                    "assignments": [
+                      59
+                    ],
+                    "declarations": [
+                      {
+                        "constant": false,
+                        "id": 59,
+                        "name": "i",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 90,
+                        "src": "1029:6:0",
+                        "stateVariable": false,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "typeName": {
+                          "id": 58,
+                          "name": "uint",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "1029:4:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "value": null,
+                        "visibility": "internal"
+                      }
+                    ],
+                    "id": 61,
+                    "initialValue": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 60,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1036:1:0",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "nodeType": "VariableDeclarationStatement",
+                    "src": "1029:8:0"
+                  },
+                  "loopExpression": {
+                    "expression": {
+                      "argumentTypes": null,
+                      "id": 67,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "UnaryOperation",
+                      "operator": "++",
+                      "prefix": false,
+                      "src": "1072:3:0",
+                      "subExpression": {
+                        "argumentTypes": null,
+                        "id": 66,
+                        "name": "i",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 59,
+                        "src": "1072:1:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 68,
+                    "nodeType": "ExpressionStatement",
+                    "src": "1072:3:0"
+                  },
+                  "nodeType": "ForStatement",
+                  "src": "1024:258:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "66616c7365",
+                    "id": 91,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "bool",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "1299:5:0",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    },
+                    "value": "false"
+                  },
+                  "functionReturnParameters": 57,
+                  "id": 92,
+                  "nodeType": "Return",
+                  "src": "1292:12:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 94,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "is_registered_manufacturer",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 54,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 53,
+                  "name": "manufacturer_pvt_id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 94,
+                  "src": "951:33:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 52,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "951:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "950:35:0"
+            },
+            "returnParameters": {
+              "id": 57,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 56,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 94,
+                  "src": "1007:4:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 55,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1007:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1006:6:0"
+            },
+            "scope": 95,
+            "src": "915:396:0",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 96,
+        "src": "25:1288:0"
+      }
+    ],
+    "src": "0:1313:0"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/Users/chinmoy_2/Desktop/personal/elastos_medicine_blockchain/contracts/GovernmentApprovedManufacturers.sol",
+      "exportedSymbols": {
+        "GovernmentApprovedManufacturers": [
+          95
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.5",
+            ".0"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "0:23:0"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            95
+          ],
+          "name": "GovernmentApprovedManufacturers",
+          "scope": 96
+        },
+        "children": [
+          {
+            "attributes": {
+              "canonicalName": "GovernmentApprovedManufacturers.ApprovedManufacturer",
+              "name": "ApprovedManufacturer",
+              "scope": 95,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "manufacturer_pvt_id",
+                  "scope": 4,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "string",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string"
+                    },
+                    "id": 2,
+                    "name": "ElementaryTypeName",
+                    "src": "111:6:0"
+                  }
+                ],
+                "id": 3,
+                "name": "VariableDeclaration",
+                "src": "111:26:0"
+              }
+            ],
+            "id": 4,
+            "name": "StructDefinition",
+            "src": "73:71:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "approved_manufacturers",
+              "scope": 95,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "struct GovernmentApprovedManufacturers.ApprovedManufacturer[]",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "length": null,
+                  "type": "struct GovernmentApprovedManufacturers.ApprovedManufacturer[]"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "ApprovedManufacturer",
+                      "referencedDeclaration": 4,
+                      "type": "struct GovernmentApprovedManufacturers.ApprovedManufacturer"
+                    },
+                    "id": 5,
+                    "name": "UserDefinedTypeName",
+                    "src": "196:20:0"
+                  }
+                ],
+                "id": 6,
+                "name": "ArrayTypeName",
+                "src": "196:22:0"
+              }
+            ],
+            "id": 7,
+            "name": "VariableDeclaration",
+            "src": "196:45:0"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": true,
+              "kind": "constructor",
+              "modifiers": [
+                null
+              ],
+              "name": "",
+              "scope": 95,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 8,
+                "name": "ParameterList",
+                "src": "292:2:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 9,
+                "name": "ParameterList",
+                "src": "302:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "assignments": [
+                        11
+                      ]
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "constant": false,
+                          "name": "approved_manufacturer",
+                          "scope": 28,
+                          "stateVariable": false,
+                          "storageLocation": "memory",
+                          "type": "struct GovernmentApprovedManufacturers.ApprovedManufacturer",
+                          "value": null,
+                          "visibility": "internal"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "contractScope": null,
+                              "name": "ApprovedManufacturer",
+                              "referencedDeclaration": 4,
+                              "type": "struct GovernmentApprovedManufacturers.ApprovedManufacturer"
+                            },
+                            "id": 10,
+                            "name": "UserDefinedTypeName",
+                            "src": "312:20:0"
+                          }
+                        ],
+                        "id": 11,
+                        "name": "VariableDeclaration",
+                        "src": "312:49:0"
+                      },
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "isStructConstructorCall": true,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "struct GovernmentApprovedManufacturers.ApprovedManufacturer memory",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_stringliteral_08e18fc6a777eeb8535f2220a701a4362bf85b64bb679cf31a28bcc7671ff9c0",
+                                  "typeString": "literal_string \"nhtAqdsPyasdBBgsdj713ngsdJKSAD\""
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 4,
+                              "type": "type(struct GovernmentApprovedManufacturers.ApprovedManufacturer storage pointer)",
+                              "value": "ApprovedManufacturer"
+                            },
+                            "id": 12,
+                            "name": "Identifier",
+                            "src": "364:20:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "6e687441716473507961736442426773646a3731336e6773644a4b534144",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "string",
+                              "type": "literal_string \"nhtAqdsPyasdBBgsdj713ngsdJKSAD\"",
+                              "value": "nhtAqdsPyasdBBgsdj713ngsdJKSAD"
+                            },
+                            "id": 13,
+                            "name": "Literal",
+                            "src": "385:32:0"
+                          }
+                        ],
+                        "id": 14,
+                        "name": "FunctionCall",
+                        "src": "364:54:0"
+                      }
+                    ],
+                    "id": 15,
+                    "name": "VariableDeclarationStatement",
+                    "src": "312:106:0"
+                  },
+                  {
+                    "attributes": {
+                      "falseBody": null
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "commonType": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "<",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "length",
+                              "referencedDeclaration": null,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 7,
+                                  "type": "struct GovernmentApprovedManufacturers.ApprovedManufacturer storage ref[] storage ref",
+                                  "value": "approved_manufacturers"
+                                },
+                                "id": 16,
+                                "name": "Identifier",
+                                "src": "432:22:0"
+                              }
+                            ],
+                            "id": 17,
+                            "name": "MemberAccess",
+                            "src": "432:29:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "31",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "number",
+                              "type": "int_const 1",
+                              "value": "1"
+                            },
+                            "id": 18,
+                            "name": "Literal",
+                            "src": "464:1:0"
+                          }
+                        ],
+                        "id": 19,
+                        "name": "BinaryOperation",
+                        "src": "432:33:0"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "isStructConstructorCall": false,
+                                  "lValueRequested": false,
+                                  "names": [
+                                    null
+                                  ],
+                                  "type": "uint256",
+                                  "type_conversion": false
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": [
+                                        {
+                                          "typeIdentifier": "t_struct$_ApprovedManufacturer_$4_memory_ptr",
+                                          "typeString": "struct GovernmentApprovedManufacturers.ApprovedManufacturer memory"
+                                        }
+                                      ],
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "member_name": "push",
+                                      "referencedDeclaration": null,
+                                      "type": "function (struct GovernmentApprovedManufacturers.ApprovedManufacturer storage ref) returns (uint256)"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 7,
+                                          "type": "struct GovernmentApprovedManufacturers.ApprovedManufacturer storage ref[] storage ref",
+                                          "value": "approved_manufacturers"
+                                        },
+                                        "id": 20,
+                                        "name": "Identifier",
+                                        "src": "480:22:0"
+                                      }
+                                    ],
+                                    "id": 22,
+                                    "name": "MemberAccess",
+                                    "src": "480:27:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 11,
+                                      "type": "struct GovernmentApprovedManufacturers.ApprovedManufacturer memory",
+                                      "value": "approved_manufacturer"
+                                    },
+                                    "id": 23,
+                                    "name": "Identifier",
+                                    "src": "508:21:0"
+                                  }
+                                ],
+                                "id": 24,
+                                "name": "FunctionCall",
+                                "src": "480:50:0"
+                              }
+                            ],
+                            "id": 25,
+                            "name": "ExpressionStatement",
+                            "src": "480:50:0"
+                          }
+                        ],
+                        "id": 26,
+                        "name": "Block",
+                        "src": "466:88:0"
+                      }
+                    ],
+                    "id": 27,
+                    "name": "IfStatement",
+                    "src": "428:126:0"
+                  }
+                ],
+                "id": 28,
+                "name": "Block",
+                "src": "302:258:0"
+              }
+            ],
+            "id": 29,
+            "name": "FunctionDefinition",
+            "src": "281:279:0"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "register_manufacturer",
+              "scope": 95,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "manufacturer_pvt_id",
+                      "scope": 51,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "string",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 30,
+                        "name": "ElementaryTypeName",
+                        "src": "628:6:0"
+                      }
+                    ],
+                    "id": 31,
+                    "name": "VariableDeclaration",
+                    "src": "628:33:0"
+                  }
+                ],
+                "id": 32,
+                "name": "ParameterList",
+                "src": "627:35:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 51,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 33,
+                        "name": "ElementaryTypeName",
+                        "src": "679:4:0"
+                      }
+                    ],
+                    "id": 34,
+                    "name": "VariableDeclaration",
+                    "src": "679:4:0"
+                  }
+                ],
+                "id": 35,
+                "name": "ParameterList",
+                "src": "678:6:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "assignments": [
+                        37
+                      ]
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "constant": false,
+                          "name": "approved_manufacturer",
+                          "scope": 50,
+                          "stateVariable": false,
+                          "storageLocation": "memory",
+                          "type": "struct GovernmentApprovedManufacturers.ApprovedManufacturer",
+                          "value": null,
+                          "visibility": "internal"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "contractScope": null,
+                              "name": "ApprovedManufacturer",
+                              "referencedDeclaration": 4,
+                              "type": "struct GovernmentApprovedManufacturers.ApprovedManufacturer"
+                            },
+                            "id": 36,
+                            "name": "UserDefinedTypeName",
+                            "src": "696:20:0"
+                          }
+                        ],
+                        "id": 37,
+                        "name": "VariableDeclaration",
+                        "src": "696:49:0"
+                      },
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": true,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "struct GovernmentApprovedManufacturers.ApprovedManufacturer memory",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_string_memory_ptr",
+                                  "typeString": "string memory"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 4,
+                              "type": "type(struct GovernmentApprovedManufacturers.ApprovedManufacturer storage pointer)",
+                              "value": "ApprovedManufacturer"
+                            },
+                            "id": 38,
+                            "name": "Identifier",
+                            "src": "748:20:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 31,
+                              "type": "string memory",
+                              "value": "manufacturer_pvt_id"
+                            },
+                            "id": 39,
+                            "name": "Identifier",
+                            "src": "769:19:0"
+                          }
+                        ],
+                        "id": 40,
+                        "name": "FunctionCall",
+                        "src": "748:41:0"
+                      }
+                    ],
+                    "id": 41,
+                    "name": "VariableDeclarationStatement",
+                    "src": "696:93:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "uint256",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_struct$_ApprovedManufacturer_$4_memory_ptr",
+                                  "typeString": "struct GovernmentApprovedManufacturers.ApprovedManufacturer memory"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "push",
+                              "referencedDeclaration": null,
+                              "type": "function (struct GovernmentApprovedManufacturers.ApprovedManufacturer storage ref) returns (uint256)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 7,
+                                  "type": "struct GovernmentApprovedManufacturers.ApprovedManufacturer storage ref[] storage ref",
+                                  "value": "approved_manufacturers"
+                                },
+                                "id": 42,
+                                "name": "Identifier",
+                                "src": "799:22:0"
+                              }
+                            ],
+                            "id": 44,
+                            "name": "MemberAccess",
+                            "src": "799:27:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 37,
+                              "type": "struct GovernmentApprovedManufacturers.ApprovedManufacturer memory",
+                              "value": "approved_manufacturer"
+                            },
+                            "id": 45,
+                            "name": "Identifier",
+                            "src": "827:21:0"
+                          }
+                        ],
+                        "id": 46,
+                        "name": "FunctionCall",
+                        "src": "799:50:0"
+                      }
+                    ],
+                    "id": 47,
+                    "name": "ExpressionStatement",
+                    "src": "799:50:0"
+                  },
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 35
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "hexvalue": "74727565",
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "subdenomination": null,
+                          "token": "bool",
+                          "type": "bool",
+                          "value": "true"
+                        },
+                        "id": 48,
+                        "name": "Literal",
+                        "src": "867:4:0"
+                      }
+                    ],
+                    "id": 49,
+                    "name": "Return",
+                    "src": "860:11:0"
+                  }
+                ],
+                "id": 50,
+                "name": "Block",
+                "src": "685:193:0"
+              }
+            ],
+            "id": 51,
+            "name": "FunctionDefinition",
+            "src": "597:281:0"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "is_registered_manufacturer",
+              "scope": 95,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "manufacturer_pvt_id",
+                      "scope": 94,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "string",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 52,
+                        "name": "ElementaryTypeName",
+                        "src": "951:6:0"
+                      }
+                    ],
+                    "id": 53,
+                    "name": "VariableDeclaration",
+                    "src": "951:33:0"
+                  }
+                ],
+                "id": 54,
+                "name": "ParameterList",
+                "src": "950:35:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 94,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 55,
+                        "name": "ElementaryTypeName",
+                        "src": "1007:4:0"
+                      }
+                    ],
+                    "id": 56,
+                    "name": "VariableDeclaration",
+                    "src": "1007:4:0"
+                  }
+                ],
+                "id": 57,
+                "name": "ParameterList",
+                "src": "1006:6:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "assignments": [
+                            59
+                          ]
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "constant": false,
+                              "name": "i",
+                              "scope": 90,
+                              "stateVariable": false,
+                              "storageLocation": "default",
+                              "type": "uint256",
+                              "value": null,
+                              "visibility": "internal"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "name": "uint",
+                                  "type": "uint256"
+                                },
+                                "id": 58,
+                                "name": "ElementaryTypeName",
+                                "src": "1029:4:0"
+                              }
+                            ],
+                            "id": 59,
+                            "name": "VariableDeclaration",
+                            "src": "1029:6:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "30",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "number",
+                              "type": "int_const 0",
+                              "value": "0"
+                            },
+                            "id": 60,
+                            "name": "Literal",
+                            "src": "1036:1:0"
+                          }
+                        ],
+                        "id": 61,
+                        "name": "VariableDeclarationStatement",
+                        "src": "1029:8:0"
+                      },
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "commonType": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "<",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 59,
+                              "type": "uint256",
+                              "value": "i"
+                            },
+                            "id": 62,
+                            "name": "Identifier",
+                            "src": "1039:1:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "length",
+                              "referencedDeclaration": null,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 7,
+                                  "type": "struct GovernmentApprovedManufacturers.ApprovedManufacturer storage ref[] storage ref",
+                                  "value": "approved_manufacturers"
+                                },
+                                "id": 63,
+                                "name": "Identifier",
+                                "src": "1041:22:0"
+                              }
+                            ],
+                            "id": 64,
+                            "name": "MemberAccess",
+                            "src": "1041:29:0"
+                          }
+                        ],
+                        "id": 65,
+                        "name": "BinaryOperation",
+                        "src": "1039:31:0"
+                      },
+                      {
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": "++",
+                              "prefix": false,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 59,
+                                  "type": "uint256",
+                                  "value": "i"
+                                },
+                                "id": 66,
+                                "name": "Identifier",
+                                "src": "1072:1:0"
+                              }
+                            ],
+                            "id": 67,
+                            "name": "UnaryOperation",
+                            "src": "1072:3:0"
+                          }
+                        ],
+                        "id": 68,
+                        "name": "ExpressionStatement",
+                        "src": "1072:3:0"
+                      },
+                      {
+                        "children": [
+                          {
+                            "attributes": {
+                              "falseBody": null
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "commonType": {
+                                    "typeIdentifier": "t_bytes32",
+                                    "typeString": "bytes32"
+                                  },
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "operator": "==",
+                                  "type": "bool"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": false,
+                                      "isStructConstructorCall": false,
+                                      "lValueRequested": false,
+                                      "names": [
+                                        null
+                                      ],
+                                      "type": "bytes32",
+                                      "type_conversion": false
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": [
+                                            {
+                                              "typeIdentifier": "t_bytes_memory_ptr",
+                                              "typeString": "bytes memory"
+                                            }
+                                          ],
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 104,
+                                          "type": "function (bytes memory) pure returns (bytes32)",
+                                          "value": "keccak256"
+                                        },
+                                        "id": 69,
+                                        "name": "Identifier",
+                                        "src": "1095:9:0"
+                                      },
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "isConstant": false,
+                                          "isLValue": false,
+                                          "isPure": false,
+                                          "isStructConstructorCall": false,
+                                          "lValueRequested": false,
+                                          "names": [
+                                            null
+                                          ],
+                                          "type": "bytes memory",
+                                          "type_conversion": false
+                                        },
+                                        "children": [
+                                          {
+                                            "attributes": {
+                                              "argumentTypes": [
+                                                {
+                                                  "typeIdentifier": "t_string_storage",
+                                                  "typeString": "string storage ref"
+                                                }
+                                              ],
+                                              "isConstant": false,
+                                              "isLValue": false,
+                                              "isPure": true,
+                                              "lValueRequested": false,
+                                              "member_name": "encodePacked",
+                                              "referencedDeclaration": null,
+                                              "type": "function () pure returns (bytes memory)"
+                                            },
+                                            "children": [
+                                              {
+                                                "attributes": {
+                                                  "argumentTypes": null,
+                                                  "overloadedDeclarations": [
+                                                    null
+                                                  ],
+                                                  "referencedDeclaration": 97,
+                                                  "type": "abi",
+                                                  "value": "abi"
+                                                },
+                                                "id": 70,
+                                                "name": "Identifier",
+                                                "src": "1105:3:0"
+                                              }
+                                            ],
+                                            "id": 71,
+                                            "name": "MemberAccess",
+                                            "src": "1105:16:0"
+                                          },
+                                          {
+                                            "attributes": {
+                                              "argumentTypes": null,
+                                              "isConstant": false,
+                                              "isLValue": true,
+                                              "isPure": false,
+                                              "lValueRequested": false,
+                                              "member_name": "manufacturer_pvt_id",
+                                              "referencedDeclaration": 3,
+                                              "type": "string storage ref"
+                                            },
+                                            "children": [
+                                              {
+                                                "attributes": {
+                                                  "argumentTypes": null,
+                                                  "isConstant": false,
+                                                  "isLValue": true,
+                                                  "isPure": false,
+                                                  "lValueRequested": false,
+                                                  "type": "struct GovernmentApprovedManufacturers.ApprovedManufacturer storage ref"
+                                                },
+                                                "children": [
+                                                  {
+                                                    "attributes": {
+                                                      "argumentTypes": null,
+                                                      "overloadedDeclarations": [
+                                                        null
+                                                      ],
+                                                      "referencedDeclaration": 7,
+                                                      "type": "struct GovernmentApprovedManufacturers.ApprovedManufacturer storage ref[] storage ref",
+                                                      "value": "approved_manufacturers"
+                                                    },
+                                                    "id": 72,
+                                                    "name": "Identifier",
+                                                    "src": "1122:22:0"
+                                                  },
+                                                  {
+                                                    "attributes": {
+                                                      "argumentTypes": null,
+                                                      "overloadedDeclarations": [
+                                                        null
+                                                      ],
+                                                      "referencedDeclaration": 59,
+                                                      "type": "uint256",
+                                                      "value": "i"
+                                                    },
+                                                    "id": 73,
+                                                    "name": "Identifier",
+                                                    "src": "1145:1:0"
+                                                  }
+                                                ],
+                                                "id": 74,
+                                                "name": "IndexAccess",
+                                                "src": "1122:25:0"
+                                              }
+                                            ],
+                                            "id": 75,
+                                            "name": "MemberAccess",
+                                            "src": "1122:45:0"
+                                          }
+                                        ],
+                                        "id": 76,
+                                        "name": "FunctionCall",
+                                        "src": "1105:63:0"
+                                      }
+                                    ],
+                                    "id": 77,
+                                    "name": "FunctionCall",
+                                    "src": "1095:74:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": false,
+                                      "isStructConstructorCall": false,
+                                      "lValueRequested": false,
+                                      "names": [
+                                        null
+                                      ],
+                                      "type": "bytes32",
+                                      "type_conversion": false
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": [
+                                            {
+                                              "typeIdentifier": "t_bytes_memory_ptr",
+                                              "typeString": "bytes memory"
+                                            }
+                                          ],
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 104,
+                                          "type": "function (bytes memory) pure returns (bytes32)",
+                                          "value": "keccak256"
+                                        },
+                                        "id": 78,
+                                        "name": "Identifier",
+                                        "src": "1173:9:0"
+                                      },
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "isConstant": false,
+                                          "isLValue": false,
+                                          "isPure": false,
+                                          "isStructConstructorCall": false,
+                                          "lValueRequested": false,
+                                          "names": [
+                                            null
+                                          ],
+                                          "type": "bytes memory",
+                                          "type_conversion": false
+                                        },
+                                        "children": [
+                                          {
+                                            "attributes": {
+                                              "argumentTypes": [
+                                                {
+                                                  "typeIdentifier": "t_string_memory_ptr",
+                                                  "typeString": "string memory"
+                                                }
+                                              ],
+                                              "isConstant": false,
+                                              "isLValue": false,
+                                              "isPure": true,
+                                              "lValueRequested": false,
+                                              "member_name": "encodePacked",
+                                              "referencedDeclaration": null,
+                                              "type": "function () pure returns (bytes memory)"
+                                            },
+                                            "children": [
+                                              {
+                                                "attributes": {
+                                                  "argumentTypes": null,
+                                                  "overloadedDeclarations": [
+                                                    null
+                                                  ],
+                                                  "referencedDeclaration": 97,
+                                                  "type": "abi",
+                                                  "value": "abi"
+                                                },
+                                                "id": 79,
+                                                "name": "Identifier",
+                                                "src": "1183:3:0"
+                                              }
+                                            ],
+                                            "id": 80,
+                                            "name": "MemberAccess",
+                                            "src": "1183:16:0"
+                                          },
+                                          {
+                                            "attributes": {
+                                              "argumentTypes": null,
+                                              "overloadedDeclarations": [
+                                                null
+                                              ],
+                                              "referencedDeclaration": 53,
+                                              "type": "string memory",
+                                              "value": "manufacturer_pvt_id"
+                                            },
+                                            "id": 81,
+                                            "name": "Identifier",
+                                            "src": "1200:19:0"
+                                          }
+                                        ],
+                                        "id": 82,
+                                        "name": "FunctionCall",
+                                        "src": "1183:37:0"
+                                      }
+                                    ],
+                                    "id": 83,
+                                    "name": "FunctionCall",
+                                    "src": "1173:48:0"
+                                  }
+                                ],
+                                "id": 84,
+                                "name": "BinaryOperation",
+                                "src": "1095:126:0"
+                              },
+                              {
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "functionReturnParameters": 57
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "hexvalue": "74727565",
+                                          "isConstant": false,
+                                          "isLValue": false,
+                                          "isPure": true,
+                                          "lValueRequested": false,
+                                          "subdenomination": null,
+                                          "token": "bool",
+                                          "type": "bool",
+                                          "value": "true"
+                                        },
+                                        "id": 85,
+                                        "name": "Literal",
+                                        "src": "1248:4:0"
+                                      }
+                                    ],
+                                    "id": 86,
+                                    "name": "Return",
+                                    "src": "1241:11:0"
+                                  }
+                                ],
+                                "id": 87,
+                                "name": "Block",
+                                "src": "1223:44:0"
+                              }
+                            ],
+                            "id": 88,
+                            "name": "IfStatement",
+                            "src": "1091:176:0"
+                          }
+                        ],
+                        "id": 89,
+                        "name": "Block",
+                        "src": "1077:205:0"
+                      }
+                    ],
+                    "id": 90,
+                    "name": "ForStatement",
+                    "src": "1024:258:0"
+                  },
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 57
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "hexvalue": "66616c7365",
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "subdenomination": null,
+                          "token": "bool",
+                          "type": "bool",
+                          "value": "false"
+                        },
+                        "id": 91,
+                        "name": "Literal",
+                        "src": "1299:5:0"
+                      }
+                    ],
+                    "id": 92,
+                    "name": "Return",
+                    "src": "1292:12:0"
+                  }
+                ],
+                "id": 93,
+                "name": "Block",
+                "src": "1013:298:0"
+              }
+            ],
+            "id": 94,
+            "name": "FunctionDefinition",
+            "src": "915:396:0"
+          }
+        ],
+        "id": 95,
+        "name": "ContractDefinition",
+        "src": "25:1288:0"
+      }
+    ],
+    "id": 96,
+    "name": "SourceUnit",
+    "src": "0:1313:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xE68c637644f879A0f9c9e176F3bBA50CCCb5fE82",
+      "transactionHash": "0xd85a755d4c0531b9238e7fc28ba6acfed68dc31a1c00c1086fe043f30a50efd2"
+    }
+  },
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2021-03-20T00:45:24.281Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
